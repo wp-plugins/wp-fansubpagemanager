@@ -21,27 +21,27 @@ Reasons to try Fansub Page Manager:
 It alows you to manage the Projects page settings in a very intuitive way.
 
 So, what should you expect from this plugin ?
-* You can add Projects Info.
-* You can add Releases.
-* You can manage fansub projects and releases.
-* You can easily provide DDL, Torrent and XDCC Links.
-* You can add XDCC Bots, and manage them.
-* You can scrape** data from NT and XDCC bots.
-* You can associate your Nyaa account.
-* Widget for releases, you can display them in sidebar.
-* Ability to attach release(s) to a post.
+*   You can add Projects Info.
+*   You can add Releases.
+*   You can manage fansub projects and releases.
+*   You can easily provide DDL, Torrent and XDCC Links.
+*   You can add XDCC Bots, and manage them.
+*   You can scrape**   data from NT and XDCC bots.
+*   You can associate your Nyaa account.
+*   Widget for releases, you can display them in sidebar.
+*   Ability to attach release(s) to a post.
 
 **NT scrape only works with "BTx Grouped" theme.
 
 
 To be Implemented Soon ?
-* Ability specify a type of release, for multiple releases per episode.
-* Ability to hide releases.
+*   Ability specify a type of release, for multiple releases per episode.
+*   Ability to hide releases.
 
 Warnings!
-* This module is unsupported.
-* Development will progress. However, it will still remain unsupported.
-* If you "deactivate" the plugin, all your release data WILL BE LOST.
+*   This module is unsupported.
+*   Development will progress. However, it will still remain unsupported.
+*   If you "deactivate" the plugin, all your release data WILL BE LOST.
 
 == Installation ==
 
@@ -74,31 +74,31 @@ directory take precedence. For example, `/assets/screenshot-1.png` would win ove
 == Changelog ==
 
 = 1.0.5 =
-* Initial public release, version 1.0.5
+*   Initial public release, version 1.0.5
 
 = 1.0.4 =
-* Nyaa scrape fixed, .css layout with new look
+*   Nyaa scrape fixed, .css layout with new look
 
 = 1.0.3 =
-* Added the option to select releases for a post
+*   Added the option to select releases for a post
 
 = 1.0.2 =
-* Finished up plugin, added edit/delete features
+*   Finished up plugin, added edit/delete features
 
 = 1.0.1 =
-* Hourly scrape cron from NT/XDCC.
+*   Hourly scrape cron from NT/XDCC.
 
 = 1.0.0 =
-* Installation/Uninstallation removed from settings to activation/deactive
+*   Installation/Uninstallation removed from settings to activation/deactive
 
 = 0.0.9 =
-* Added widget
+*   Added widget
 
 = 0.0.8 =
-* XDCC features added
+*   XDCC features added
 
 = 0.0.7 =
-* Initial Release, v0.0.7
+*   Initial Release, v0.0.7
 
 == Upgrade Notice == 
 
@@ -120,9 +120,9 @@ Ordered list:
 
 Unordered list:
 
-* something
-* something else
-* third thing
+*   something
+*   something else
+*   third thing
 
 Here's a link to [WordPress](http://wordpress.org/ "Your favorite software") and one to [Markdown's Syntax Documentation][markdown syntax].
 Titles are optional, naturally.
