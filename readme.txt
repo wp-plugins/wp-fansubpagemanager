@@ -12,7 +12,7 @@ Fansub Page Manager - Creating and managing your Fansub Projects pages made easy
 
 == Description ==
 
-This version is ONLY on PT-PT, if you want it on English please donate, and you'll have access to it.
+This version is ONLY on PT-PT, if you want it on English, French or even Spanish please donate, and you'll have access to it.
 
 As you might have noticed, managing the pages of your WordPress site isn't very intuitive out of the box. So we found a way to make it a whole lot easier. Here's how...
 
@@ -55,7 +55,7 @@ e.g.
 
 == Frequently Asked Questions ==
 
-= How can I Have this on English or French?
+= How can I Have this on English, French or even Spanish?
 
 Just donate and I'll give to you the translated plugin ;)
 
