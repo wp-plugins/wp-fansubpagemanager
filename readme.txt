@@ -1,4 +1,5 @@
 === Plugin Name ===
+Contributors: leinad4mind
 Donate link: http://donatenow.wc.lt/?donate=leinad4mind@hotmail.com&item-name=WP-FansubPageManager&amount=10&method=PayPal
 Tags: fansub, fansubbing, manager, page
 Requires at least: 3.0.1
@@ -20,27 +21,27 @@ Reasons to try Fansub Page Manager:
 It alows you to manage the Projects page settings in a very intuitive way.
 
 So, what should you expect from this plugin ?
-- You can add Projects Info.
-- You can add Releases.
-- You can manage fansub projects and releases.
-- You can easily provide DDL, Torrent and XDCC Links.
-- You can add XDCC Bots, and manage them.
-- You can scrape* data from NT1 and XDCC bots.
-- You can associate your Nyaa account.
-- Widget for releases, you can display them in sidebar.
-- Ability to attach release(s) to a post.
+* You can add Projects Info.
+* You can add Releases.
+* You can manage fansub projects and releases.
+* You can easily provide DDL, Torrent and XDCC Links.
+* You can add XDCC Bots, and manage them.
+* You can scrape** data from NT and XDCC bots.
+* You can associate your Nyaa account.
+* Widget for releases, you can display them in sidebar.
+* Ability to attach release(s) to a post.
 
-*NT scrape only works with "BTx Grouped" theme.
+**NT scrape only works with "BTx Grouped" theme.
 
 
 To be Implemented Soon ?
-- Ability specify a type of release, for multiple releases per episode.
-- Ability to hide releases.
+* Ability specify a type of release, for multiple releases per episode.
+* Ability to hide releases.
 
 Warnings!
-- This module is unsupported.
-- Development will progress. However, it will still remain unsupported.
-- If you "deactivate" the plugin, all your release data WILL BE LOST.
+* This module is unsupported.
+* Development will progress. However, it will still remain unsupported.
+* If you "deactivate" the plugin, all your release data WILL BE LOST.
 
 == Installation ==
 
@@ -54,13 +55,13 @@ e.g.
 
 == Frequently Asked Questions ==
 
-= A question that someone might have =
+= How can I Have this on English or French?
 
-An answer to that question.
+Just donate and I'll give to you the translated plugin ;)
 
-= What about foo bar? =
+= Can you add a new feature? =
 
-Answer to foo bar dilemma.
+Just tell me what feature you want me to add and donate for supporting development.
 
 == Screenshots ==
 
@@ -68,7 +69,7 @@ Answer to foo bar dilemma.
 the /assets directory or the directory that contains the stable readme.txt (tags or trunk). Screenshots in the /assets 
 directory take precedence. For example, `/assets/screenshot-1.png` would win over `/tags/4.3/screenshot-1.png` 
 (or jpg, jpeg, gif).
-2. This is the second screen shot
+2. This is the second screen shot.
 
 == Changelog ==
 
@@ -99,6 +100,9 @@ directory take precedence. For example, `/assets/screenshot-1.png` would win ove
 = 0.0.7 =
 * Initial Release, v0.0.7
 
+== Upgrade Notice == 
+
+There are no upgrades.
 
 == Arbitrary section ==
 
