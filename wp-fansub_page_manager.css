@@ -1,0 +1,87 @@
+p img.proj_img {
+	border: 0px #000 solid;
+	height: auto;
+	margin-right: 10px;
+	max-width: 200px;
+	}
+
+table.releases {
+	border-spacing: 0px;
+	border: 1px solid #000;
+	margin: 5px 0 20px 0;
+	width:100%;
+	}
+
+table.releases tr th.cols {
+	background-color: #333333;
+	border-bottom: 1px solid #222222;
+	border-top: 1px solid #222222;
+	color: #6d97b5;
+	font-weight: bold;
+	padding:3px;
+	text-align:center;
+	text-transform:uppercase;
+	}
+
+table.releases tr th.title {
+	background-color: #222222;
+	color:#6197B5;
+	font-size:11pt;
+	padding:5px;
+	text-align:left;
+	text-transform:none;
+	}
+
+table.releases tr.normal {
+	background: #444444;
+	}
+
+table.releases tr.normal td {
+	border-bottom: 1px solid #222222;
+	color: #ffffff;
+	padding:3px;
+	text-align:center;
+	}
+
+table.releases tr.alternate { 
+	background: #363636;
+	}
+
+table.releases tr.alternate td {
+	border-bottom: 1px solid #222222;
+	color: #ffffff;
+	padding:3px;
+	text-align:center;
+	}
+
+table.releases tr.xdcc { 
+	background: #5F5F5F;
+	}
+
+table.releases tr.xdcc td {
+	border-bottom: 1px solid #222222;
+	color: #ffffff;
+	padding:3px;
+	text-align:center;
+	}
+
+table.releases tr.xdcc table tr td {
+	border:0px;
+	color:#DFF4FF;
+	padding:0px;
+	text-align:left;
+	}
+
+table.releases tr.xdcc input {
+	border:  1px solid #222222;
+	}
+
+table.releases a { color: #E0FF0A; cursor: pointer; }
+table.releases a:visited { color: #E0FF0A; }
+table.releases a:active { color: #E0FF0A; }
+table.releases a:link { color: #E0FF0A; }
+
+table.releases tr.normal:hover { background-color:#2c2c2c; }
+table.releases tr.alternate:hover { background-color:#2c2c2c; }
+
+.wpfnsbclear { clear:both; }
