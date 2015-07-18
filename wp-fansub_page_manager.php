@@ -152,12 +152,12 @@ function fnsbpage( $content ) {
 		$newcont .= "<div>";
 		$newcont .= "<p><img src='".$data['image']."' align='left' class='proj_img' />";
 		$newcont .= "<b>".stripslashes($data['title'])."</b><br />";
-		$newcont .= "<b>Genre: </b>".stripslashes($data['genre'])."<br />";
-		$newcont .= "<b>Original Work: </b>".stripslashes($data['originalwork'])."<br />";
-		$newcont .= "<b>Season: </b>".stripslashes($data['season'])."<br />";
-		$newcont .= "<b>Episodes: </b> ".$comp_episodes."/".$data['episodes']."<br />";
-		$newcont .= "<b>Status: </b><span ".($fnsb_scolor[$data['status']] ? " style='color:".$fnsb_scolor[$data['status']]."'" : "").">".$fnsb_status[$data['status']]."</span><br />";
-		$newcont .= "<a href='".$data['official']."'>Official Website</a> - <a href='http://anidb.net/a".$data['anidb']."'>AniDB</a> - <a href='http://www.animenewsnetwork.com/encyclopedia/anime.php?id=".$data['ann']."'>ANN</a><br />";
+		$newcont .= "<b>Género: </b>".stripslashes($data['genre'])."<br />";
+		$newcont .= "<b>Estúdio: </b>".stripslashes($data['originalwork'])."<br />";
+		$newcont .= "<b>Temporada: </b>".stripslashes($data['season'])."<br />";
+		$newcont .= "<b>Episódios: </b> ".$comp_episodes."/".$data['episodes']."<br />";
+		$newcont .= "<b>Estado: </b><span ".($fnsb_scolor[$data['status']] ? " style='color:".$fnsb_scolor[$data['status']]."'" : "").">".$fnsb_status[$data['status']]."</span><br />";
+		$newcont .= "<a href='".$data['official']."'>Site Oficial</a> - <a href='http://anidb.net/a".$data['anidb']."'>AniDB</a> - <a href='http://www.animenewsnetwork.com/encyclopedia/anime.php?id=".$data['ann']."'>ANN</a><br />";
 		$newcont .= "</p>";
 		$newcont .= "</div>";
 		$newcont .= "<div class=\"wpfnsbclear\"></div>";
@@ -165,7 +165,7 @@ function fnsbpage( $content ) {
 			$newcont .= "<div>";
 			$newcont .= "<table class=\"releases\">";
 			$newcont .= "<thead>";
-			$newcont .= "<tr><th colspan='".$mcolspan."' class='title'>Releases of ".stripslashes($data['title'])."</td></tr>";
+			$newcont .= "<tr><th colspan='".$mcolspan."' class='title'>Lançamentos de ".stripslashes($data['title'])."</td></tr>";
 			$newcont .= "<tr><th class='cols'>Episódio</th class='cols'><th class='cols'>CRC32</th><th class='cols'>Data</th><th class='cols'>Torrent</th>";
 			if ( get_option('fnsb_nyaa') ) $newcont .= "<th class='cols'>S</th><th class='cols'>L</th><th class='cols'>C</th>";
 			if ( get_option('fnsb_xdcc') ) $newcont .= "<th class='cols'>XDCC</th>";
@@ -189,7 +189,7 @@ function fnsbpage( $content ) {
 				$newcont .= "</tr>";
 				if ( get_option('fnsb_xdcc') ) {
 					$newcont .= "<tr class='xdcc' style='display:none;' id='xdcc_p".$key."_r".$epi['rid']."'><td colspan='".$mcolspan."' align='center'>";
-					$newcont .= "<table width='100%;' class='xdcclist'>".(is_array($xdcc[$epi['crc']]) ? implode("", $xdcc[$epi['crc']]) : "No XDCC Bots have this pack.")."</table>";
+					$newcont .= "<table width='100%;' class='xdcclist'>".(is_array($xdcc[$epi['crc']]) ? implode("", $xdcc[$epi['crc']]) : "Nenhum Bot XDCC tem este pack.")."</table>";
 					$newcont .= "</td></tr>";
 				}
 			}

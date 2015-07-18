@@ -6,18 +6,18 @@ define("FNSB_BASE", FNSB_DIRNAME.'/settings.php');
 define('FNSB_FOLDER', dirname(plugin_basename(__FILE__)));
 define('FNSB_URL', plugins_url(FNSB_FOLDER, dirname(__FILE__)));
 
-define("FNSB_SETTINGS", "Settings");
-define("FNSB_PROJECTS", "Projects");
-define("FNSB_RELEASES", "Releases");
+define("FNSB_SETTINGS", "Configurações");
+define("FNSB_PROJECTS", "Projectos");
+define("FNSB_RELEASES", "Lançamentos");
 define("FNSB_XDCC", "XDCC");
 define("FNSB_SCRAPE", "Scrape");
-define("FNSB_EDIT", "Edit");
+define("FNSB_EDIT", "Editar");
 
-define("FNSB_STATUS_ONGOING", "Ongoing");
-define("FNSB_STATUS_STALLED", "Stalled");
-define("FNSB_STATUS_DROPPED", "Dropped");
-define("FNSB_STATUS_COMPLETED", "Completed");
-define("FNSB_STATUS_LICENSED", "Licensed");
+define("FNSB_STATUS_ONGOING", "Em Andamento");
+define("FNSB_STATUS_STALLED", "Parado");
+define("FNSB_STATUS_DROPPED", "Abandonado");
+define("FNSB_STATUS_COMPLETED", "Terminado");
+define("FNSB_STATUS_LICENSED", "Licenciado");
 
 $fnsb_status = array("1"=>FNSB_STATUS_ONGOING,"2"=>FNSB_STATUS_STALLED,"3"=>FNSB_STATUS_LICENSED,"4"=>FNSB_STATUS_DROPPED,"5"=>FNSB_STATUS_COMPLETED);
 $fnsb_scolor = array("1"=>"#008000","2"=>"","3"=>"#FF0000","4"=>"#FF0000","5"=>"#0000FF");

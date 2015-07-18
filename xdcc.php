@@ -2,7 +2,7 @@
 require_once('globals.php');
 
 if(!current_user_can('wpfansubpagemanager')) {
-	die('Access Denied');
+	die('Acesso Negado');
 }
 
 if ( $_POST['addnew'] ) {
@@ -14,14 +14,14 @@ if ( $_POST['addnew'] ) {
 	$wpdb->query($sql);
 
 	$update = 1;
-	$updatemsg = "XDCC Bot added with success.";
+	$updatemsg = "XDCC Bot adicionado com sucesso.";
 }
 if ( $_GET['do'] == "del" ) {
 	$query = "DELETE FROM ".$wpdb->prefix."xdcc_bot WHERE id='".$wpdb->escape($_GET['delid'])."' LIMIT 1;";
 	$wpdb->query($query);
 
 	$update = 1;
-	$updatemsg = "XDCC Bot deleted with success.";
+	$updatemsg = "XDCC Bot apagado com sucesso.";
 }
 
 $max_num_rows = $wpdb->get_var("SELECT COUNT(*) FROM ".$wpdb->prefix."xdcc_bot;");
@@ -60,7 +60,7 @@ if ( $update ) {
 <div class="tablenav">
 
 <?php if ( $page_links ) { ?>
-<div class="tablenav-pages"><?php $page_links_text = sprintf( '<span class="displaying-num">' . __( 'Displaying %s&#8211;%s of %s' ) . '</span>%s',
+<div class="tablenav-pages"><?php $page_links_text = sprintf( '<span class="displaying-num">' . __( 'A mostrar %s&#8211;%s de %s' ) . '</span>%s',
 	number_format_i18n( ( $_GET['paged'] - 1 ) * $limit + 1 ),
 	number_format_i18n( min( $_GET['paged'] * $limit, $max_num_rows ) ),
 	number_format_i18n( $max_num_rows ),
@@ -87,7 +87,7 @@ foreach($rows as $r) {
 	<tr id='proj-<?php echo($r['id']); ?>' class='<?php echo(($i%2) ? "" : "alternate "); ?>author-other status-publish iedit' valign="top">
 		<th scope="row" class="check-column"><input type="checkbox" name="proj[]" value="<?php echo($r['id']); ?>" /></th>
 		<td class="post-title column-title"><strong><a class="row-title" href="#"><?php echo(stripslashes($r['nick'])); ?></a></strong>
-			<div class="row-actions"><span class='edit'><span class='delete'><a class='submitdelete' title='Delete this bot' href='admin.php?page=<?php echo(FNSB_DIRNAME); ?>/xdcc.php&do=del&delid=<?php echo($r['id']); ?>' onclick="if ( confirm('You are about to delete this bot \'<?php echo($r['nick']); ?>\'\n \'Cancel\' to stop, \'OK\' to delete.') ) { return true;}return false;">Delete</a></div>
+			<div class="row-actions"><span class='edit'><a href="admin.php?page=<?php echo(FNSB_DIRNAME); ?>/xdcc.php&do==edit&editid=<?php echo($r['rid']); ?>" title="Editar este bot">Editar</a> | <span class='delete'><a class='submitdelete' title='Apagar este bot' href='admin.php?page=<?php echo(FNSB_DIRNAME); ?>/xdcc.php&do=del&delid=<?php echo($r['id']); ?>' onclick="if ( confirm('Está prestes a apagar este bot \'<?php echo($r['nick']); ?>\'\n \'Cancelar\' para retroceder, \'OK\' para apagar.') ) { return true;}return false;">Apagar</a></div>
 		</td>
 		<td class="author column-author"><a href='<?php echo($r['url']); ?>'>Packlist</a></td>
 
@@ -117,7 +117,7 @@ foreach($rows as $r) {
 <table class="widefat post fixed" cellspacing="0">
 	<thead>
 	<tr>
-	<th scope="col" id="title" class="manage-column column-title" colspan="2">Add New Bot</td>
+	<th scope="col" id="title" class="manage-column column-title" colspan="2">Adicionar Novo Bot</td>
 	</tr>
 	</thead>
 	<tbody>
@@ -128,7 +128,7 @@ foreach($rows as $r) {
 		<tr id='addnew' class='author-other status-publish iedit' valign="top"><td colspan='2' align='center'><input type='submit' class="button-primary" value='Add' /></td></tr></form>
 	<tfoot>
 	<tr>
-	<th scope="col" id="title" class="manage-column column-title" colspan="2">Add New Bot</td>
+	<th scope="col" id="title" class="manage-column column-title" colspan="2">Adicionar Novo Bot</td>
 	</tr>
 	</tfoot>
 </table>
