@@ -55,7 +55,7 @@ e.g.
 
 == Frequently Asked Questions ==
 
-= How can I Have this on English, French or even Spanish?
+= How can I Have this on English, French or even Spanish? =
 
 Just donate and I'll give to you the translated plugin ;)
 
